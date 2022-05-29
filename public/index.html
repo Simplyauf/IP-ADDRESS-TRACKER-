@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="output.css">
+ 
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+ 
+
+</style>
+<body class="h-[100vh] text-PrimaryColor flex flex-col "> 
+  <section class="w-[100%] h-[300px] bg-[url('images/pattern-bg.png')] bg-no-repeat bg-cover   bg-center"> 
+<h2 class="pt-8 text-center font-Rubik tracking-widest text-[22px] text-white font-bold">
+  IP Address Tracker
+</h2>
+<div class="flex relative w-[100%] md:w-[55%] tablet:w-[70%]  lg:w-[50%] px-[6%] mt-8 mx-auto items-center ">
+  <span class="absolute hidden font-bold text-red-800 uppercase font- text-md error bottom-14 Error-Modal">whshhshsdhdshssd</span>
+  <input required placeholder="Search for any IP address or domain"   class="pl-4 placeholder:text-[14px]  md:placeholder:text-[16px] placeholder:font-Rubik lg:text-18px lg:placeholder:text-[18px] tablet:placeholder:text-[16px]   placeholder:font-normal placeholder:text-NeutralColor w-[90%]  text-[18px] rounded-2xl focus:border-none focus focus:outline-none focus:ring-none rounded-tr-none rounded-br-none border-none h-[50px] input-ipAddress" type="text" >
+  <img class="Btn rounded-xl border-none bg-black rounded-tl-none rounded-bl-none  border-l-0 p-[18px]" src="images/icon-arrow.svg" alt="">
+</div>
+
+<article class="flex z-[2000] mt-8 sticky flex-col gap-4 items-center justify-center border-[1px] bg-white rounded-md drop-shadow-lg shadow-lg mx-[6%] md:mx-[9%]  md:flex-row md:gap-6  md:justify-around  md:pb-8  md:items-start laptop:mx-[12%] lg:mx-[8%]  pt-4 pb-4 md:pl-[4%] md:pr-[6%]">
+  <div class="text-center md:text-left   md:pr-[4%]">
+    <span class="text-[12px] font-Rubik text-NeutralColor font-bold  tracking-[2px] leading-[3px] ">
+     IP ADDRESS
+    </span>
+    <h2 class="font-bold lg:text-[20px] laptop:text-[21px] current-ipAddress transition-all">
+     192.168.87.901
+    </h2>
+  </div>
+
+   <div class="text-center md:text-left md:border-l-[1px] md:border-r-[1px] md:pl-[4%] md:pr-[5%]">
+    <span class="text-[12px] text-NeutralColor font-bold tracking-[2px] leading-[3px]">
+     LOCATION
+    </span>
+    <h2 class="font-bold lg:text-[20px] laptop:text-[21px] ipAddress-location transition-all duration-300">
+     bROOKLYN, NY 10001
+    </h2>
+  </div>
+
+   <div class="text-center basis-[27%] md:text-left   md:pr-[8%]">
+    <span class="text-[12px] text-NeutralColor font-bold tracking-[2px] leading-[3px]">
+      TIMEZONE
+    </span>
+    <h2 class="font-bold lg:text-[20px] laptop:text-[21px] ipAddress-timezone transition-all duration-300">
+      UTC-05:00 
+    </h2>
+  </div>
+
+   <div class="text-center md:border-l-[1px]">
+    <span class="text-[12px] text-NeutralColor font-bold tracking-[2px] leading-[3px]">
+     ISP
+    </span>
+    <h2 class="font-bold lg:text-[20px] laptop:text-[21px] ipAddress-ISP transition-all duration-300">
+      SpaceX Starlink
+    </h2>
+  </div>
+  
+</div>
+  </section>
+
+				<div class=" justify-self-end  flex-grow-[2]  min-h-[320px] md:-mt-16" id="map">
+	
+	
+
+
+
+ <!--   IP Address Tracker
+
+  Search for any IP address or domain
+
+  IP Address
+  Location
+  Timezone
+    UTC  add offset value dynamically using the API 
+  ISP
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>. -->
+  </div>
+</body>
+<script src="app.js">
+
+</script>
+</html>
